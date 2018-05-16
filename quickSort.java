@@ -24,3 +24,8 @@
         kuiSort(nums, left, i - 1);
         kuiSort(nums, i + 1, right);
     }
+    private void swap(int[] nums, int i, int j) {
+        int tmp = nums[j];
+        nums[j] = nums[i];
+        nums[i] = tmp;
+    }
